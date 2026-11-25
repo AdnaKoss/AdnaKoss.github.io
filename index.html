@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Adna Kos – Software Engineer</title>
+<meta name="description" content="Software engineer focused on security and machine learning. Based in Zenica, Bosnia and Herzegovina.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--ink:#161616;--muted:#6b6b6b;--bg:#fff;--soft:#f5f5f4;--line:#e6e6e4;--sans:'DM Sans',system-ui,sans-serif;--serif:'Instrument Serif',Georgia,serif}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--bg);line-height:1.7;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+.wrap{max-width:860px;margin:0 auto;padding:0 2rem}
+p{max-width:62ch}
+p+p{margin-top:1rem}
+.muted{color:var(--muted)}
+
+nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:1rem;padding-bottom:1rem}
+.brand{font-family:var(--serif);font-size:1.3rem;text-decoration:none}
+nav ul{display:flex;gap:1.6rem;list-style:none}
+nav ul a{font-size:.88rem;color:var(--muted);text-decoration:none}
+nav ul a:hover{color:var(--ink)}
+
+.hero{padding:7rem 0 6rem}
+h1{font-family:var(--serif);font-weight:400;font-size:clamp(4rem,11vw,7.5rem);line-height:.95;letter-spacing:-.02em;margin-bottom:1.75rem}
+.tagline{font-size:1.2rem;font-weight:300;color:var(--muted);max-width:34ch;margin-bottom:2.25rem}
+.btns{display:flex;gap:.75rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:.65rem 1.35rem;border-radius:99px;font-size:.9rem;font-weight:500;text-decoration:none;border:1px solid var(--ink);transition:background .18s,color .18s}
+.btn:hover{background:var(--ink);color:#fff}
+.btn.main{background:var(--ink);color:#fff}
+.btn.main:hover{background:#333}
+
+section{padding:5rem 0;border-top:1px solid var(--line)}
+h2{font-family:var(--serif);font-weight:400;font-size:2.4rem;line-height:1.1;margin-bottom:2rem}
+h3{font-size:1.02rem;font-weight:600}
+
+.about{display:grid;grid-template-columns:230px 1fr;gap:3rem}
+.facts div{padding:.7rem 0;border-bottom:1px solid var(--line);font-size:.92rem}
+.facts div:first-child{padding-top:0}
+.facts b{display:block;font-weight:600}
+.facts span{color:var(--muted)}
+
+.projects{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.proj{padding:1.5rem;background:var(--soft);border-radius:10px;display:flex;flex-direction:column;gap:.6rem}
+.proj.wide{grid-column:1/-1}
+.proj p{font-size:.93rem;color:var(--muted)}
+.tags{font-size:.82rem;color:var(--muted)}
+.proj a.link{margin-top:auto;font-size:.88rem;font-weight:500;text-decoration:underline;text-underline-offset:3px}
+
+.timeline{list-style:none}
+.timeline li{display:grid;grid-template-columns:200px 1fr;gap:2rem;padding:1.4rem 0;border-bottom:1px solid var(--line)}
+.timeline li:first-child{padding-top:0}
+.timeline .when{font-size:.88rem;color:var(--muted)}
+.timeline p{font-size:.93rem;color:var(--muted);margin-top:.25rem}
+
+.list div{display:grid;grid-template-columns:1fr;padding:.8rem 0;border-bottom:1px solid var(--line);font-size:.95rem}
+.list div:first-child{padding-top:0}
+.list span{font-size:.86rem;color:var(--muted)}
+
+.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:1.75rem 3rem}
+.skills h3{margin-bottom:.3rem}
+.skills p{font-size:.93rem;color:var(--muted)}
+
+.two{display:grid;grid-template-columns:1fr 1fr;gap:3rem}
+
+#contact{background:var(--soft)}
+#contact p{margin-bottom:1.75rem}
+footer{padding:2rem 0;font-size:.84rem;color:var(--muted)}
+
+@media(max-width:780px){
+.about,.projects,.skills,.two{grid-template-columns:1fr}
+.timeline li{grid-template-columns:1fr;gap:.2rem}
+nav ul{gap:1rem}
+nav ul li:nth-child(n+5){display:none}
+.hero{padding:4.5rem 0 4rem}
+section{padding:3.5rem 0}
+.wrap{padding:0 1.25rem}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<nav>
+<div class="wrap">
+<a class="brand" href="#top">Adna Kos</a>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#chess">Chess</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</div>
+</nav>
+
+<header class="hero" id="top">
+<div class="wrap">
+<h1>Adna Kos</h1>
+<p class="tagline">Software engineer working on security and machine learning.</p>
+<div class="btns">
+<a class="btn main" href="#projects">See my projects</a>
+<a class="btn" href="https://github.com/AdnaKoss" target="_blank" rel="noopener">GitHub</a>
+<a class="btn" href="https://www.linkedin.com/in/adna-kos-94b956392/" target="_blank" rel="noopener">LinkedIn</a>
+</div>
+</div>
+</header>
+
+<section id="about">
+<div class="wrap">
+<h2>About</h2>
+<div class="about">
+<div class="facts">
+<div><b>Master’s, Management and IT</b><span>University of Sarajevo, EFSA (from Oct 2026)</span></div>
+<div><b>B.Eng. Software Engineering</b><span>University of Zenica, July 2026</span></div>
+<div><b>Based in</b><span>Zenica, Bosnia and Herzegovina</span></div>
+<div><b>Languages</b><span>Bosnian (native), English (C1)</span></div>
+</div>
+<div>
+<p>I graduated in Software Engineering in July 2026 and have started a Master’s in Management and IT in Sarajevo. My bachelor’s thesis was a machine-learning system that detects phishing, which sums up where my interests meet: security problems and the tools to solve them.</p>
+<p>I’ve built projects in Python, C# and Java, from a chess engine to Spring Boot web apps. I also taught HTML and CSS to beginners as lead instructor at CoderDojo Zenica, which made me better at explaining my own work.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="projects">
+<div class="wrap">
+<h2>Projects</h2>
+<div class="projects">
+
+<div class="proj wide">
+<h3>Phishing detection with machine learning</h3>
+<div class="tags">Python · Machine learning · FastAPI · Security</div>
+<p>My bachelor’s thesis. I trained and compared several models for classifying phishing content, then built a FastAPI service around the final classifier so it works as a real tool, not only as an experiment.</p>
+</div>
+
+<div class="proj">
+<h3>ChessInsight</h3>
+<div class="tags">C# · .NET 8 · WPF</div>
+<p>A chess engine with minimax and alpha-beta pruning, transposition tables and an opening book, covered by 31 unit tests.</p>
+<a class="link" href="https://github.com/AdnaKoss/ChessInsight" target="_blank" rel="noopener">View on GitHub</a>
+</div>
+
+<div class="proj">
+<h3>Security Q&amp;A app</h3>
+<div class="tags">Python · RAG · CVE data</div>
+<p>Retrieval-augmented search over CVE vulnerability data, exploring how AI can help with security research.</p>
+<a class="link" href="https://github.com/AdnaKoss" target="_blank" rel="noopener">Find it on GitHub</a>
+</div>
+
+<div class="proj">
+<h3>Automated test suite</h3>
+<div class="tags">Playwright · pytest · GitHub Actions</div>
+<p>End-to-end and unit tests that run automatically on every push through a GitHub Actions pipeline.</p>
+<a class="link" href="https://github.com/AdnaKoss" target="_blank" rel="noopener">Find it on GitHub</a>
+</div>
+
+<div class="proj">
+<h3>BibliotekaProjekat</h3>
+<div class="tags">Java · Spring Boot · MySQL</div>
+<p>Library management web app: book inventory, user accounts and borrowing records, with a clear split between data and presentation.</p>
+<a class="link" href="https://github.com/AdnaKoss/BibliotekaProjekat" target="_blank" rel="noopener">View on GitHub</a>
+</div>
+
+</div>
+<p class="muted" style="margin-top:1.5rem;font-size:.92rem">More repositories are on <a href="https://github.com/AdnaKoss" target="_blank" rel="noopener">my GitHub</a>.</p>
+</div>
+</section>
+
+<section id="experience">
+<div class="wrap">
+<h2>Experience</h2>
+<ul class="timeline">
+<li>
+<div class="when">Jul 2026 – Aug 2026<br>CoderDojo, Zenica</div>
+<div><h3>Lead Mentor and Instructor, Web Programming</h3><p>Main instructor of a month-long course teaching HTML and CSS to beginners. I prepared the lessons, exercises and quizzes and gave individual feedback.</p></div>
+</li>
+<li>
+<div class="when">Feb 2026 – Apr 2026<br>Grafit d.o.o., Zenica</div>
+<div><h3>Software Engineering Intern</h3><p>Worked on team-based software projects in a professional IT environment, coordinated tasks, met deadlines and wrote technical documentation.</p></div>
+</li>
+<li>
+<div class="when">Jan 2026 – Mar 2026<br>MobileCenter, Zenica</div>
+<div><h3>Social Media Assistant (part-time)</h3><p>Handled daily content, publishing and customer messages.</p></div>
+</li>
+<li>
+<div class="when">2024 – present<br>School tournaments</div>
+<div><h3>Chess Arbiter</h3><p>Judge and help organize school-level chess tournaments.</p></div>
+</li>
+</ul>
+</div>
+</section>
+
+<section id="chess">
+<div class="wrap">
+<h2>Chess</h2>
+<div class="list">
+<div>Senior Women’s Chess Champion of Bosnia and Herzegovina</div>
+<div>Three-time Women’s Chess Champion of the Federation of Bosnia and Herzegovina</div>
+<div>Two-time Vice Champion of Women’s Youth Chess of Bosnia and Herzegovina</div>
+<div>University Chess Champion</div>
+<div>Winner of the International Women’s Day Chess Tournament<span>Plus multiple awards and tournament prizes</span></div>
+</div>
+</div>
+</section>
+
+<section id="skills">
+<div class="wrap">
+<h2>Skills</h2>
+<div class="skills">
+<div><h3>Programming</h3><p>Python, C#, Java, .NET, Spring Boot, REST APIs, FastAPI, OOP</p></div>
+<div><h3>AI and data</h3><p>ML workflow, model evaluation, information retrieval, RAG</p></div>
+<div><h3>Security</h3><p>Phishing detection, CVE and security data</p></div>
+<div><h3>Testing</h3><p>Playwright, pytest, GitHub Actions</p></div>
+<div><h3>Working style</h3><p>Technical documentation, teaching, research, decisions under pressure, teamwork</p></div>
+</div>
+</div>
+</section>
+
+<section id="training">
+<div class="wrap">
+<div class="two">
+<div>
+<h2>Training and events</h2>
+<div class="list">
+<div>Western Balkans Cybersecurity Marathon for Women<span>Practical cybersecurity training, Oct 2026 – Jan 2027</span></div>
+<div>Cyber Security Summit Sarajevo<span>Participant, 18–19 Nov 2026</span></div>
+<div>Kiss the Future AI Summit, Sarajevo<span>Participant, 15–16 Oct 2026</span></div>
+<div>MED26 Barcelona<span>International youth engagement program, Jun 2026</span></div>
+</div>
+</div>
+<div>
+<h2>Seminars</h2>
+<div class="list">
+<div>Leadership, Peacebuilding and Emotional Intelligence<span>Sarajevo, Sep 2025</span></div>
+<div>Professional and Soft Skills, Jericho Foundation<span>Sarajevo, Apr 2025</span></div>
+<div>Work and Leadership Skills<span>Sarajevo, Sep 2024</span></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="wrap">
+<h2>Contact</h2>
+<p>I’m open to opportunities in software engineering, security and machine learning. If something looks like a fit, get in touch.</p>
+<div class="btns">
+<a class="btn main" href="mailto:adnakos123@gmail.com">adnakos123@gmail.com</a>
+<a class="btn" href="https://www.linkedin.com/in/adna-kos-94b956392/" target="_blank" rel="noopener">LinkedIn</a>
+<a class="btn" href="https://github.com/AdnaKoss" target="_blank" rel="noopener">GitHub</a>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="wrap">Adna Kos · Zenica, Bosnia and Herzegovina · 2026</div>
+</footer>
+
+</body>
+</html>
